@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 414771625
+    locked: 0
+  - name: Assets
+    uniqueID: 2653962447
+    locked: 0
