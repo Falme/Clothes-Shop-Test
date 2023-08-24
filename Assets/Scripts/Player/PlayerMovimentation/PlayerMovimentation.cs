@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(IPlayerInput))]
@@ -22,7 +23,8 @@ public class PlayerMovimentation : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		MovePlayer(playerInput.GetInputAxis());
+		if(PlayerAgency.hasPlayerAgency)
+			MovePlayer(playerInput.GetInputAxis());
 	}
 
 	private void MovePlayer(Vector2 axis)

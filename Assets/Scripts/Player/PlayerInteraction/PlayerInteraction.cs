@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 [RequireComponent(typeof(IInteractionInput))]
@@ -22,9 +23,16 @@ public class PlayerInteraction : MonoBehaviour
 		currentInteraction = null;
 		interactableWarning.DisableInteractionIcon();
 	}
+	
+	private void Update()
+	{
+		if(PlayerAgency.hasPlayerAgency)
+			UpdatePlayerInteraction();
+	}
 
-	private void Update() {
-		if(interactionInput.GetInputDown() && currentInteraction != null)
+	private void UpdatePlayerInteraction()
+	{
+		if (interactionInput.GetInputDown() && currentInteraction != null)
 			currentInteraction.Action();
 	}
 }
