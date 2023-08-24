@@ -79,6 +79,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f5e94ed1f42ccb409297659d8819b24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactableWarning: {fileID: 6955505790202310363}
 --- !u!50 &7763652806082791607
 Rigidbody2D:
   serializedVersion: 4
@@ -359,6 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5045428622428226160}
+  - component: {fileID: 6955505790202310363}
   m_Layer: 0
   m_Name: Interaction
   m_TagString: Untagged
@@ -382,6 +384,20 @@ Transform:
   m_Father: {fileID: 4366279208482386094}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6955505790202310363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4010903183928616936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfaeb4c79d61a44aa874720bd65ccb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balloonIcon: {fileID: 247260410050467375}
+  balloonText: {fileID: 5379635650638418494}
 --- !u!1 &5802703624205616876
 GameObject:
   m_ObjectHideFlags: 0
