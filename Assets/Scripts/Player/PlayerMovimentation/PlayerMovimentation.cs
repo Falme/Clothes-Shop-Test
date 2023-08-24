@@ -1,11 +1,15 @@
+using System;
 using UnityEngine;
 
+[RequireComponent(typeof(IPlayerInput))]
 public class PlayerMovimentation : MonoBehaviour
 {
+	private const string HORIZONTAL = "Horizontal";
+	private const string VERTICAL = "Vertical";
+
 	[SerializeField] private float velocity;
 
 	private Animator animator;
-	
 	private Rigidbody2D rb2D;
 
 	private IPlayerInput playerInput;
@@ -17,10 +21,10 @@ public class PlayerMovimentation : MonoBehaviour
 		playerInput = GetComponent<IPlayerInput>();
 	}
 
-
 	private void FixedUpdate()
 	{
-		MovePlayer(playerInput.GetInputAxis());
+		if(PlayerAgency.hasPlayerAgency)
+			MovePlayer(playerInput.GetInputAxis());
 	}
 
 	private void MovePlayer(Vector2 axis)
@@ -31,7 +35,7 @@ public class PlayerMovimentation : MonoBehaviour
 
 	private void UpdateSprite(Vector2 axis)
 	{
-		animator.SetFloat("Horizontal", axis.x);
-		animator.SetFloat("Vertical", axis.y);
+		animator.SetFloat(HORIZONTAL, axis.x);
+		animator.SetFloat(VERTICAL, axis.y);
 	}
 }
