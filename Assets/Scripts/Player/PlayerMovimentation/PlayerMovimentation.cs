@@ -34,4 +34,9 @@ public class PlayerMovimentation : MonoBehaviour
 		animator.SetFloat("Horizontal", axis.x);
 		animator.SetFloat("Vertical", axis.y);
 	}
+	
+	void OnTriggerEnter2D(Collider2D other)
+	{
+		Debug.Log(other.name);
+	}
 }
