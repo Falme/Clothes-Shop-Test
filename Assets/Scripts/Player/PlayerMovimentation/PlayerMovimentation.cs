@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class PlayerMovimentation : MonoBehaviour
 {
+	private const string HORIZONTAL = "Horizontal";
+	private const string VERTICAL = "Vertical";
+
 	[SerializeField] private float velocity;
 
 	private Animator animator;
-	
 	private Rigidbody2D rb2D;
 
 	private IPlayerInput playerInput;
@@ -16,7 +18,6 @@ public class PlayerMovimentation : MonoBehaviour
 		animator = GetComponent<Animator>();
 		playerInput = GetComponent<IPlayerInput>();
 	}
-
 
 	private void FixedUpdate()
 	{
@@ -31,12 +32,7 @@ public class PlayerMovimentation : MonoBehaviour
 
 	private void UpdateSprite(Vector2 axis)
 	{
-		animator.SetFloat("Horizontal", axis.x);
-		animator.SetFloat("Vertical", axis.y);
-	}
-	
-	void OnTriggerEnter2D(Collider2D other)
-	{
-		Debug.Log(other.name);
+		animator.SetFloat(HORIZONTAL, axis.x);
+		animator.SetFloat(VERTICAL, axis.y);
 	}
 }
