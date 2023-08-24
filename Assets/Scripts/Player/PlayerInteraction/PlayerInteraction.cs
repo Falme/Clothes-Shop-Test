@@ -5,6 +5,11 @@ public class PlayerInteraction : MonoBehaviour
 	[SerializeField] private InteractableWarning interactableWarning;
 
 	private IInteractionEvent currentInteraction;
+	private IInteractionInput interactionInput;
+
+	private void Awake() {
+		interactionInput = GetComponent<IInteractionInput>();
+	}
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
@@ -18,7 +23,7 @@ public class PlayerInteraction : MonoBehaviour
 	}
 
 	private void Update() {
-		if(Input.GetKeyDown(KeyCode.E) && currentInteraction != null)
+		if(interactionInput.GetInputDown() && currentInteraction != null)
 			currentInteraction.Action();
 	}
 }
