@@ -1,11 +1,10 @@
-using UnityEngine;
-
 public class OpenStoreInteractionEvent : InteractionEvent
 {
-	[SerializeField] private Canvas canvas;
+	public delegate void OpenStore();
+	public static event OpenStore OnOpenStore;
 
 	protected override void CallActionEvent()
 	{
-		canvas.enabled = true;
+		OnOpenStore?.Invoke();
 	}
 }

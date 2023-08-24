@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Store : MonoBehaviour
@@ -8,11 +9,25 @@ public class Store : MonoBehaviour
 		canvas = GetComponent<Canvas>();
 	}
 
+	private void OnEnable() {
+		OpenStoreInteractionEvent.OnOpenStore += OpenStore;
+	}
+
+
+	private void OnDisable() {
+		OpenStoreInteractionEvent.OnOpenStore -= OpenStore;
+	}
+
 	private void Update() {
 		if(Input.GetKeyDown(KeyCode.Escape))
 		{
 			PlayerAgency.hasPlayerAgency = true;
 			canvas.enabled = false;
 		}
+	}
+
+	private void OpenStore()
+	{
+		canvas.enabled = true;
 	}
 }
