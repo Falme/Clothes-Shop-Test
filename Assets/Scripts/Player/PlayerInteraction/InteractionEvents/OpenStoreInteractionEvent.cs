@@ -1,7 +1,11 @@
+using UnityEngine;
+
 public class OpenStoreInteractionEvent : InteractionEvent
 {
+	[SerializeField] private Canvas canvas;
+
 	protected override void CallActionEvent()
 	{
-		UnityEditor.EditorApplication.isPaused = true;
+		canvas.enabled = true;
 	}
 }
