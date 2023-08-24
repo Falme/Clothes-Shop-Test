@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -14,13 +12,11 @@ public class InteractableWarning : MonoBehaviour
 
 	public void EnableInteractionIcon()
 	{
-		balloonIcon.enabled = true;
-		balloonText.enabled = true;
+		balloonIcon.enabled = balloonText.enabled = true;
 	}
 	
 	public void DisableInteractionIcon()
 	{
-		balloonIcon.enabled = false;
-		balloonText.enabled = false;
+		balloonIcon.enabled = balloonText.enabled = false;
 	}
 }
