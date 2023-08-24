@@ -8,30 +8,22 @@ public class PlayerMovementation : MonoBehaviour
 	
 	private Rigidbody2D rb2D;
 
-	private Vector2 axis;
+	private IPlayerInput playerInput;
 
 	private void Awake() 
 	{
 		rb2D = GetComponent<Rigidbody2D>();
+		playerInput = GetComponent<IPlayerInput>();
 	}
 
-    private void Update()
-    {
-		axis = Vector2.zero;
-
-		if(Input.GetKey(KeyCode.W)) axis.y = 1f;
-		else if(Input.GetKey(KeyCode.S)) axis.y = -1f;
-		
-		if(Input.GetKey(KeyCode.A)) axis.x = -1f; 
-		else if(Input.GetKey(KeyCode.D)) axis.x = 1f; 
-    }
+    private void Update() { }
 
 	private void FixedUpdate()
 	{
-		MovePlayer();
+		MovePlayer(playerInput.GetInputAxis());
 	}
 
-	private void MovePlayer()
+	private void MovePlayer(Vector2 axis)
 	{
 		rb2D.velocity = axis * velocity * Time.fixedDeltaTime;
 	}
