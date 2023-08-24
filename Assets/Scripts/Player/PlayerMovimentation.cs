@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovementation : MonoBehaviour
+public class PlayerMovimentation : MonoBehaviour
 {
 	[SerializeField] private float velocity;
 
@@ -19,6 +16,7 @@ public class PlayerMovementation : MonoBehaviour
 		animator = GetComponent<Animator>();
 		playerInput = GetComponent<IPlayerInput>();
 	}
+
 
 	private void FixedUpdate()
 	{
