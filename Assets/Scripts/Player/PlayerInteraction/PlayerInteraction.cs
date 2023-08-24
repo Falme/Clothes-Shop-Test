@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(IInteractionInput))]
 public class PlayerInteraction : MonoBehaviour
 {
 	[SerializeField] private InteractableWarning interactableWarning;

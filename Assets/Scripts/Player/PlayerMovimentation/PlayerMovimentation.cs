@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(IPlayerInput))]
 public class PlayerMovimentation : MonoBehaviour
 {
 	private const string HORIZONTAL = "Horizontal";
