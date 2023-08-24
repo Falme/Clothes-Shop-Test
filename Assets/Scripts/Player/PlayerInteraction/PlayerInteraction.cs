@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 [RequireComponent(typeof(IInteractionInput))]
@@ -6,7 +5,7 @@ public class PlayerInteraction : MonoBehaviour
 {
 	[SerializeField] private InteractableWarning interactableWarning;
 
-	private IInteractionEvent currentInteraction;
+	private InteractionEvent currentInteraction;
 	private IInteractionInput interactionInput;
 
 	private void Awake() {
@@ -15,7 +14,7 @@ public class PlayerInteraction : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
-		currentInteraction = other.GetComponent<IInteractionEvent>();
+		currentInteraction = other.GetComponent<InteractionEvent>();
 		interactableWarning.EnableInteractionIcon();
 	}
 

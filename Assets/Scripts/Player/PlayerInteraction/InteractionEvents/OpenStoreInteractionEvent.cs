@@ -1,10 +1,7 @@
-using UnityEngine;
-
-public class OpenStoreInteractionEvent : MonoBehaviour, IInteractionEvent
+public class OpenStoreInteractionEvent : InteractionEvent
 {
-	public void Action()
+	protected override void CallActionEvent()
 	{
-		//UnityEditor.EditorApplication.isPaused = true;
-		PlayerAgency.hasPlayerAgency = false;
+		UnityEditor.EditorApplication.isPaused = true;
 	}
 }

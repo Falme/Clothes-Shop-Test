@@ -1,8 +1,6 @@
-using UnityEngine;
-
-public class OpenDoorInteractionEvent : MonoBehaviour, IInteractionEvent
+public class OpenDoorInteractionEvent : InteractionEvent
 {
-	public void Action()
+	protected override void CallActionEvent()
 	{
 		UnityEditor.EditorApplication.isPlaying = false;
 	}

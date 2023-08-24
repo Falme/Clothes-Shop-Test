@@ -2489,6 +2489,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1673571629}
     m_Modifications:
+    - target: {fileID: 3831046047261239418, guid: 87d8c3aed77746546b70e19cbfab72d4, type: 3}
+      propertyPath: disablePlayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5145731027711023053, guid: 87d8c3aed77746546b70e19cbfab72d4, type: 3}
       propertyPath: m_Name
       value: ShopKeeper
