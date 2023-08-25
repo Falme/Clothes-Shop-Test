@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf62b1f3d64d9054182e687dbdf4ea49, type: 3}
   m_Name: CyanClothes_ShopItemData
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 1
   itemCategory: 0
-  name: Yellow Clothes
-  sprite: {fileID: -532404164, guid: 3a1bb7951dadfcc469e4dbb252dd6103, type: 3}
-  price: 100
+  name: Cyan Clothes
+  sprite: {fileID: -1840319785, guid: 86b11a4da0fc163469180d39e0c8c6b3, type: 3}
+  price: 120
   skinSprite: {fileID: 7108339969198208228, guid: 9315ba45b63723845abdca8fcbc85c8f, type: 3}
