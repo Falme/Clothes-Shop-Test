@@ -3,8 +3,13 @@ using UnityEngine;
 public class Debug : MonoBehaviour
 {
     void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Alpha0))
+	{
+		DeleteAllData();
+	}
+
+	private static void DeleteAllData()
+	{
+		if (Input.GetKeyDown(KeyCode.Alpha0))
 			PlayerPrefs.DeleteAll();
-    }
+	}
 }
