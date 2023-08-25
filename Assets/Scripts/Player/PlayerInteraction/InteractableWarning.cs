@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class InteractableWarning : MonoBehaviour
 {
-	[SerializeField] private SpriteRenderer balloonIcon;
-	[SerializeField] private TextMeshPro balloonText;
+	[SerializeField] private GameObject balloonIcon;
 
 	private void Start() {
 		DisableInteractionIcon();
@@ -12,11 +11,11 @@ public class InteractableWarning : MonoBehaviour
 
 	public void EnableInteractionIcon()
 	{
-		balloonIcon.enabled = balloonText.enabled = true;
+		balloonIcon.SetActive(true);
 	}
 	
 	public void DisableInteractionIcon()
 	{
-		balloonIcon.enabled = balloonText.enabled = false;
+		balloonIcon.SetActive(false);
 	}
 }

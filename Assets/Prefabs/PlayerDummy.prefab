@@ -438,8 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfaeb4c79d61a44aa874720bd65ccb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloonIcon: {fileID: 247260410050467375}
-  balloonText: {fileID: 5379635650638418494}
+  balloonIcon: {fileID: 5802703624205616876}
 --- !u!1 &5802703624205616876
 GameObject:
   m_ObjectHideFlags: 0
