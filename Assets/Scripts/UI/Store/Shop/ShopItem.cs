@@ -10,15 +10,16 @@ public class ShopItem : MonoBehaviour
 	public static event ItemTransaction OnBuyItem;
 	public static event ItemTransaction OnSellItem;
 	
+	public delegate void EquipItem(ShopItemData itemData);
+	public static event EquipItem OnEquipItem;
+	
 	public delegate void FinishTransaction();
 	public static event FinishTransaction OnFinishTransaction;
 
 	[SerializeField] private TextMeshProUGUI priceText;
 	[SerializeField] private Image itemImage;
 
-	private int itemID;
-	private ItemCategory itemCategory;
-	private SpriteLibraryAsset skinSprite;
+	private ShopItemData itemData;
 
 	private int price;
 
@@ -49,23 +50,26 @@ public class ShopItem : MonoBehaviour
 		}
 	}
 
+	public void Equip()
+	{
+		OnEquipItem?.Invoke(itemData);
+	}
+
 	public void SetItem(ShopItemData item)
 	{
-		itemID = item.ID;
-		itemCategory = item.itemCategory;
+		itemData = item;
 		itemImage.sprite = item.sprite;
 		price = item.price;
-		skinSprite = item.skinSprite;
 		UpdatePrice();
 	}
 
 	private void SaveItemPurchase()
 	{
-		PlayerPrefs.SetInt($"{(int)itemCategory}_{itemID}_owned", 1);
+		PlayerPrefs.SetInt($"{(int)itemData.itemCategory}_{itemData.ID}_owned", 1);
 	}
 
 	private void SaveItemSelling()
 	{
-		PlayerPrefs.SetInt($"{(int)itemCategory}_{itemID}_owned", 0);
+		PlayerPrefs.SetInt($"{(int)itemData.itemCategory}_{itemData.ID}_owned", 0);
 	}
 }

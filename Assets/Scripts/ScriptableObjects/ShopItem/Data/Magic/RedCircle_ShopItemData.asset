@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf62b1f3d64d9054182e687dbdf4ea49, type: 3}
   m_Name: RedCircle_ShopItemData
   m_EditorClassIdentifier: 
-  ID: 0
+  ID: 1
   itemCategory: 4
   name: Red Circle
   sprite: {fileID: 21300000, guid: e828181400a5c9e4a8a1be3357344d23, type: 3}
   price: 2000
+  skinSprite: {fileID: 0}
