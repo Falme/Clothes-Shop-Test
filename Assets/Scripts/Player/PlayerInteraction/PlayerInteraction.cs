@@ -15,7 +15,8 @@ public class PlayerInteraction : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		currentInteraction = other.GetComponent<InteractionEvent>();
-		interactableWarning.EnableInteractionIcon();
+		
+		if(currentInteraction != null) interactableWarning.EnableInteractionIcon();
 	}
 
 	private void OnTriggerExit2D(Collider2D other) {
