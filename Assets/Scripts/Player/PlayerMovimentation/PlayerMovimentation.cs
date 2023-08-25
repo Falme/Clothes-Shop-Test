@@ -25,6 +25,8 @@ public class PlayerMovimentation : MonoBehaviour
 	{
 		if(PlayerAgency.hasPlayerAgency)
 			MovePlayer(playerInput.GetInputAxis());
+		else
+			MovePlayer(Vector2.zero);
 	}
 
 	private void MovePlayer(Vector2 axis)

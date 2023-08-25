@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf62b1f3d64d9054182e687dbdf4ea49, type: 3}
+  m_Name: CyanClothes_ShopItemData
+  m_EditorClassIdentifier: 
+  ID: 0
+  itemCategory: 0
+  name: Yellow Clothes
+  sprite: {fileID: -532404164, guid: 3a1bb7951dadfcc469e4dbb252dd6103, type: 3}
+  price: 100
+  skinSprite: {fileID: 7108339969198208228, guid: 9315ba45b63723845abdca8fcbc85c8f, type: 3}
