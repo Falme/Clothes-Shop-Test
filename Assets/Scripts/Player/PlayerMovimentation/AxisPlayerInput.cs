@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AxisPlayerInput : MonoBehaviour, IPlayerInput
 {
+	private const string HORIZONTAL = "Horizontal";
+	private const string VERTICAL = "Vertical";
+
 	public Vector2 GetInputAxis()
 	{
-		return new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+		return new Vector2(Input.GetAxisRaw(HORIZONTAL), Input.GetAxisRaw(VERTICAL));
 	}
 }

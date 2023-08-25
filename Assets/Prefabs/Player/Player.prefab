@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6336070789127720858}
   - component: {fileID: 7145876499506426736}
   m_Layer: 0
-  m_Name: PlayerDummy
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,8 +233,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1641004849
-  m_SortingLayer: 2
+  m_SortingLayerID: -754347951
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 565790793, guid: 22c75b61f8c6a5e42bd474344dcd488f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -438,8 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cfaeb4c79d61a44aa874720bd65ccb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  balloonIcon: {fileID: 247260410050467375}
-  balloonText: {fileID: 5379635650638418494}
+  balloonIcon: {fileID: 5802703624205616876}
 --- !u!1 &5802703624205616876
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,8 +510,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1641004849
-  m_SortingLayer: 2
+  m_SortingLayerID: -754347951
+  m_SortingLayer: 3
   m_SortingOrder: 6
   m_Sprite: {fileID: 21300000, guid: 2d78a9af1b3eb2a4f9156ba68268e176, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -598,8 +597,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1641004849
-  m_SortingLayer: 2
+  m_SortingLayerID: -754347951
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 1768988030, guid: a568c1731146b844d931454e98abb383, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -728,8 +727,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1641004849
-  m_SortingLayer: 2
+  m_SortingLayerID: -754347951
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: -532404164, guid: 3a1bb7951dadfcc469e4dbb252dd6103, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -861,8 +860,8 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -1641004849
-  m_SortingLayer: 2
+  m_SortingLayerID: -754347951
+  m_SortingLayer: 3
   m_SortingOrder: 7
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &5379635650638418494
