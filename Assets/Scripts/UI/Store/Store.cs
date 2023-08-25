@@ -13,7 +13,6 @@ public class Store : MonoBehaviour
 		OpenStoreInteractionEvent.OnOpenStore += OpenStore;
 	}
 
-
 	private void OnDisable() {
 		OpenStoreInteractionEvent.OnOpenStore -= OpenStore;
 	}
