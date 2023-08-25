@@ -336,6 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7021575989037643831}
   - component: {fileID: 7021575989037643825}
+  - component: {fileID: 3259767877877120375}
   - component: {fileID: 7021575989037643824}
   - component: {fileID: 3483127130373687815}
   m_Layer: 5
@@ -375,6 +376,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7021575989037643830}
   m_CullTransparentMesh: 1
+--- !u!114 &3259767877877120375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7021575989037643830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f1dc1df4fafb66499f7ec7237af4fb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  priceText: {fileID: 274550803159837357}
 --- !u!114 &7021575989037643824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,7 +462,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7021575989037643824}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3259767877877120375}
+        m_TargetAssemblyTypeName: ShopItem, Assembly-CSharp
+        m_MethodName: Buy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &8849349156775360482
 GameObject:
   m_ObjectHideFlags: 0

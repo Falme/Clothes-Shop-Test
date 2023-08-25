@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -15,6 +16,15 @@ public class PlayerCurrency : MonoBehaviour
         LoadCurrency();
 		ShowCurrency();
     }
+
+	private void OnEnable() {
+		ShopItem.OnBuyItem += OnBuyItem;
+	}
+
+
+	private void OnDisable() {
+		ShopItem.OnBuyItem -= OnBuyItem;
+	}
 
     void Update()
     {
@@ -68,5 +78,13 @@ public class PlayerCurrency : MonoBehaviour
 	private void LoadCurrency()
 	{
 		currency = PlayerPrefs.GetInt(CURRENCY_KEY, 0);
+	}
+
+	private void OnBuyItem(int price)
+	{
+		if(price <= currency)
+		{
+			SubtractCurrency(price);
+		}
 	}
 }
