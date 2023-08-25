@@ -17,3 +17,4 @@ MonoBehaviour:
   name: Hair White
   sprite: {fileID: -489362014, guid: a26a2270f72211b4cbd1f9f85ffab4b7, type: 3}
   price: 40
+  skinSprite: {fileID: 7108339969198208228, guid: eb1da369af1eef64f995f86617337641, type: 3}

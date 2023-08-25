@@ -17,3 +17,4 @@ MonoBehaviour:
   name: Wizard Hat
   sprite: {fileID: 1768988030, guid: a568c1731146b844d931454e98abb383, type: 3}
   price: 70
+  skinSprite: {fileID: 7108339969198208228, guid: 91f706413e72dd741b8aed82d647dd8e, type: 3}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.U2D.Animation;
 
 public enum ItemCategory
 {
@@ -20,4 +21,5 @@ public class ShopItemData : ScriptableObject
 	public string name;
 	public Sprite sprite;
 	public int price;
+	public SpriteLibraryAsset skinSprite;
 }

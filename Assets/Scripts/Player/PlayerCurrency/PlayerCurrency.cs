@@ -80,11 +80,14 @@ public class PlayerCurrency : MonoBehaviour
 		currency = PlayerPrefs.GetInt(CURRENCY_KEY, 0);
 	}
 
-	private void OnBuyItem(int price)
+	private bool OnBuyItem(int price)
 	{
 		if(price <= currency)
 		{
 			SubtractCurrency(price);
+			return true;
 		}
+		
+		return false;
 	}
 }

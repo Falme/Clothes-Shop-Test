@@ -17,3 +17,4 @@ MonoBehaviour:
   name: Cyan Clothes
   sprite: {fileID: -1840319785, guid: 86b11a4da0fc163469180d39e0c8c6b3, type: 3}
   price: 120
+  skinSprite: {fileID: 7108339969198208228, guid: ec7047166f4796744951e8819527fc4c, type: 3}
