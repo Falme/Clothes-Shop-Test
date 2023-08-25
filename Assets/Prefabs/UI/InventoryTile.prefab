@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 3734154433912139638}
   - component: {fileID: 7132926641444718911}
   m_Layer: 5
-  m_Name: Sell
+  m_Name: EquipText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,7 +712,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1674112081125969040}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2034491639441560856}
+        m_TargetAssemblyTypeName: ShopItem, Assembly-CSharp
+        m_MethodName: Equip
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7420678766174862288
 GameObject:
   m_ObjectHideFlags: 0

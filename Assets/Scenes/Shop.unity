@@ -1312,6 +1312,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EquipTile (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 2f8624d2f025140459892bfcd6a24603, type: 2}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemCategory
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
 --- !u!224 &670593988 stripped
@@ -1892,6 +1900,14 @@ PrefabInstance:
     - target: {fileID: 3148812102289349819, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
       propertyPath: m_Name
       value: EquipTile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: bd440f094b5f26d49b42e3958584a737, type: 2}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemCategory
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
@@ -2799,6 +2815,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EquipTile (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: ec5b8c9e80a062a4e9eb76890ab29ec9, type: 2}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemCategory
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
 --- !u!224 &1315163267 stripped
@@ -3117,6 +3141,14 @@ PrefabInstance:
     - target: {fileID: 3148812102289349819, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
       propertyPath: m_Name
       value: EquipTile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 8d2695b51ba59e44d95103e45d583740, type: 2}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemCategory
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
@@ -4686,6 +4718,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: EquipTile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4a31ce33f74435d4e9c53347a11c1968, type: 2}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemCategory
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
 --- !u!224 &1941703623 stripped
@@ -5356,6 +5396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EquipTile
       objectReference: {fileID: 0}
+    - target: {fileID: 8530009601682544322, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
+      propertyPath: itemData
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f03fd7fec9b6304183790bd840f1ee6, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2872a9710c0fdf7438a132d140cc3258, type: 3}
 --- !u!1001 &5998224378368928947
