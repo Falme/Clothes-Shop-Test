@@ -5806,7 +5806,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 585269289836863547, guid: cf69f261944f22b4597c7c4de46f1935, type: 3}
       propertyPath: m_Name
-      value: PlayerDummy
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4366279208482386094, guid: cf69f261944f22b4597c7c4de46f1935, type: 3}
       propertyPath: m_RootOrder
