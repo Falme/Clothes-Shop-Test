@@ -6,9 +6,11 @@ public class Shop : MonoBehaviour
 	[SerializeField] private GameObject itemObject;
 	[SerializeField] private Transform itemListContent;
 
-	[SerializeField] private ShopItemListData shopItemList;
+	[SerializeField] private ShopContentData shopItemList;
 
 	[SerializeField] private bool showPurchased;
+
+	private int currentCategory;
 
     void Start()
     {
@@ -17,15 +19,24 @@ public class Shop : MonoBehaviour
 
 	private void OnEnable() {
 		ShopItem.OnFinishTransaction += RefreshShop;
+		Categories.OnChangeCategory += OnChangeCategory;
 	}
 
 	private void OnDisable() {
 		ShopItem.OnFinishTransaction -= RefreshShop;
+		Categories.OnChangeCategory -= OnChangeCategory;
+	}
+
+	private void OnChangeCategory(int categoryId)
+	{
+		currentCategory = categoryId;
+		RefreshShop();
 	}
 
 	private void LoadItems()
 	{
-		foreach(ShopItemData itemData in shopItemList.shopItemDatas)
+		ShopItemData[] shopItems = shopItemList.shopContents[currentCategory].shopItemDatas;
+		foreach (ShopItemData itemData in shopItems)
 		{
 			if(CheckItemInStore(itemData.ID, itemData.itemCategory) == showPurchased) continue;
 
