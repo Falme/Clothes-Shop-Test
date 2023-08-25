@@ -19,11 +19,13 @@ public class PlayerCurrency : MonoBehaviour
 
 	private void OnEnable() {
 		ShopItem.OnBuyItem += OnBuyItem;
+		ShopItem.OnSellItem += OnSellItem;
 	}
 
 
 	private void OnDisable() {
 		ShopItem.OnBuyItem -= OnBuyItem;
+		ShopItem.OnSellItem -= OnSellItem;
 	}
 
     void Update()
@@ -89,5 +91,11 @@ public class PlayerCurrency : MonoBehaviour
 		}
 		
 		return false;
+	}
+
+	private bool OnSellItem(int price)
+	{
+		AddCurrency(price);
+		return true;
 	}
 }

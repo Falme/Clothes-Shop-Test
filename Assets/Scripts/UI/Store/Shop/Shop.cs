@@ -8,28 +8,26 @@ public class Shop : MonoBehaviour
 
 	[SerializeField] private ShopItemListData shopItemList;
 
+	[SerializeField] private bool showPurchased;
+
     void Start()
     {
 		LoadItems();
     }
 
 	private void OnEnable() {
-		ShopItem.OnFinishPurchase += RefreshShop;
+		ShopItem.OnFinishTransaction += RefreshShop;
 	}
 
 	private void OnDisable() {
-		ShopItem.OnFinishPurchase -= RefreshShop;
-	}
-
-	private void Update() {
-		if(Input.GetKeyDown(KeyCode.Alpha4)) RefreshShop();
+		ShopItem.OnFinishTransaction -= RefreshShop;
 	}
 
 	private void LoadItems()
 	{
 		foreach(ShopItemData itemData in shopItemList.shopItemDatas)
 		{
-			if(!CheckItemInStore(itemData.ID, itemData.itemCategory)) continue;
+			if(CheckItemInStore(itemData.ID, itemData.itemCategory) == showPurchased) continue;
 
 			ShopItem item = Instantiate(itemObject, itemListContent).GetComponent<ShopItem>();
 			item.SetItem(itemData);

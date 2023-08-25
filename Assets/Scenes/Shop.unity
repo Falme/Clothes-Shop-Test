@@ -1495,12 +1495,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 696491197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19118df0049d4df4cbee0bc8b19e119b, type: 3}
+  m_Script: {fileID: 11500000, guid: 53920c7f3445c874a856a856256dce4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemObject: {fileID: 5798196401719644249, guid: b4cf0e5214c50db46a8a04cea07ea98e, type: 3}
   itemListContent: {fileID: 1519306456}
   shopItemList: {fileID: 11400000, guid: 7446f0cfe3057f44181cbbf8e598cad6, type: 2}
+  showPurchased: 1
 --- !u!1 &760259970
 GameObject:
   m_ObjectHideFlags: 0
@@ -4166,7 +4167,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1734838094}
   m_HandleRect: {fileID: 1734838093}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -4575,6 +4576,7 @@ MonoBehaviour:
   itemObject: {fileID: 7021575989037643830, guid: d980533e70938b346a018784a91d7b19, type: 3}
   itemListContent: {fileID: 782458854}
   shopItemList: {fileID: 11400000, guid: 7446f0cfe3057f44181cbbf8e598cad6, type: 2}
+  showPurchased: 0
 --- !u!1001 &1941703622
 PrefabInstance:
   m_ObjectHideFlags: 0

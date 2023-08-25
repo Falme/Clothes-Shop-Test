@@ -6,11 +6,12 @@ using UnityEngine.UI;
 
 public class ShopItem : MonoBehaviour
 {
-	public delegate bool BuyItem(int price);
-	public static event BuyItem OnBuyItem;
+	public delegate bool ItemTransaction(int price);
+	public static event ItemTransaction OnBuyItem;
+	public static event ItemTransaction OnSellItem;
 	
-	public delegate void FinishPurchase();
-	public static event FinishPurchase OnFinishPurchase;
+	public delegate void FinishTransaction();
+	public static event FinishTransaction OnFinishTransaction;
 
 	[SerializeField] private TextMeshProUGUI priceText;
 	[SerializeField] private Image itemImage;
@@ -20,11 +21,6 @@ public class ShopItem : MonoBehaviour
 	private SpriteLibraryAsset skinSprite;
 
 	private int price;
-
-    void Start()
-    {
-		
-    }
 
 	private void UpdatePrice()
 	{
@@ -38,7 +34,18 @@ public class ShopItem : MonoBehaviour
 		if(successful == true)
 		{
 			SaveItemPurchase();
-			OnFinishPurchase?.Invoke();
+			OnFinishTransaction?.Invoke();
+		}
+	}
+
+	public void Sell()
+	{
+		bool? successful = OnSellItem?.Invoke(price);
+
+		if(successful == true)
+		{
+			SaveItemSelling();
+			OnFinishTransaction?.Invoke();
 		}
 	}
 
@@ -55,5 +62,10 @@ public class ShopItem : MonoBehaviour
 	private void SaveItemPurchase()
 	{
 		PlayerPrefs.SetInt($"{(int)itemCategory}_{itemID}_owned", 1);
+	}
+
+	private void SaveItemSelling()
+	{
+		PlayerPrefs.SetInt($"{(int)itemCategory}_{itemID}_owned", 0);
 	}
 }
