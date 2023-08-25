@@ -20,10 +20,13 @@ public class Store : MonoBehaviour
 
 	private void Update() {
 		if(Input.GetKeyDown(KeyCode.Escape))
-		{
-			PlayerAgency.hasPlayerAgency = true;
-			canvas.enabled = false;
-		}
+			CloseStore();
+	}
+
+	public void CloseStore()
+	{
+		PlayerAgency.hasPlayerAgency = true;
+		canvas.enabled = false;
 	}
 
 	private void OpenStore()
